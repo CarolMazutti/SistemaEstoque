@@ -1,0 +1,30 @@
+GET http://localhost:3333/cliente
+
+###
+
+GET http://localhost:3333/fornecedor/3
+
+###
+
+POST http://localhost:3333/usuario
+Content-Type: application/json
+
+{
+    "id_usuario": 9,
+    "perfil": "admin"
+}
+
+
+###
+
+PUT http://localhost:3333/cliente/atualizar/9
+Content-Type: application/json
+
+{
+    "nome": "Fulano de Tal",
+    "cidade_cliente_id": 1
+}
+
+###
+
+DELETE http://localhost:3333/produto/excluir/1
